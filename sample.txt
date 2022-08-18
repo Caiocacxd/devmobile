@@ -1,0 +1,29 @@
+Branch = ramificaçao da main line.
+
+Commit = Salva a versao de arquivo criada.
+
+Merge = Junta a branch criada com main line. Ou com outra branch.
+
+Remote = Leva o repositorio com .git para o github.
+
+Push = Usado para colocar o Commit feito na maquina no Remote, ou seja no github.
+Pull = Tira do github o Commit já salvo e trás pra sua maquina.
+
+
+git init = inicia um repositorio .git no diretório(pasta) em que este comando for dado.
+git add (nome do arquivo)= manda os arquivos pra area de stage. Deixa preparado para um commit. 
+git status = Mostra a lista preparada pelo git add, para commit.
+git commit -m ¨menssagem¨ = Envia o commit da area de stage com uma menssagem para o git (repositorio local), limpando o stage.
+
+Branch principal está sendo chamada de main ou master.
+
+Se estiver (master)
+git branch -M ¨main¨ = renomeia para (main).
+
+Conexao com servidor nuvem.
+
+git remote add origin (link do repositorio github) = Conexao entre repositorio local e o do github.
+
+Após a conexão
+
+git push -u origin main = Abre uma interface para login no GitHub e envia os arquivos do repositorio local para o do GitHub.
