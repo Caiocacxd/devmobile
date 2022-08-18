@@ -10,8 +10,8 @@ Push = Usado para colocar o Commit feito na maquina no Remote, ou seja no github
 Pull = Tira do github o Commit já salvo e trás pra sua maquina.
 
 
-git init = inicia um repositorio .git no diretório(pasta) em que este comando for dado.
-git add (nome do arquivo)= manda os arquivos pra area de stage. Deixa preparado para um commit. 
+git init = inicia um repositorio local .git no diretório(pasta) em que este comando for dado.
+git add (nome do arquivo) ou git add . (manda todos arquivos da pasta)= manda os arquivos pra area de stage. Deixa preparado para um commit. 
 git status = Mostra a lista preparada pelo git add, para commit.
 git commit -m ¨menssagem¨ = Envia o commit da area de stage com uma menssagem para o git (repositorio local), limpando o stage.
 
@@ -27,3 +27,33 @@ git remote add origin (link do repositorio github) = Conexao entre repositorio l
 Após a conexão
 
 git push -u origin main = Abre uma interface para login no GitHub e envia os arquivos do repositorio local para o do GitHub.
+
+Criando uma nova branch, antes de modificar o arquivo
+
+git checkout -b ¨nome-branch¨ = checkout sai da branch atual e vai pra criada, -b ¨¨ cria e nomeia nova branch.
+
+Depois de modificar o arquivo
+
+git add.
+git commit -m ¨modificao/feature name¨
+git push origin (nome-branch) = Enviando para branch e nao pra main no github.
+
+git checkout main = Para voltar para a branch main.
+
+git merge (nome-branch) = Merge branch secundaria na branch main.
+git push origin main = Enviar pra main, toda a informação de juntar as branchs.
+
+Dando pull do github pra repositorio local
+Criar uma pasta para receber o repositorio github
+Abrir gitbash na pasta
+
+git clone (link do repositorio github)
+
+Se o repositorio github clonado for atualizado, para baixar a atualização para minha maquina
+Dentro da pasta com terminal/gitbash
+
+git pull
+
+No proprio github, se estiver feito uma alteração no repositorio de outra pessoa e quiser enviar para a pessoa
+Contribute
+Open pull request
